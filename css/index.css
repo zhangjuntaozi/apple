@@ -1,0 +1,703 @@
+/*
+* @Author: Acer
+* @Date:   2017-03-29 19:27:09
+* @Last Modified by:   Acer
+* @Last Modified time: 2017-04-04 14:30:00
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	list-style: none;
+	text-decoration: none;
+	color: #fff;
+}
+
+.adv{
+	width: 100%;
+	height:40px;
+	background: #444;
+}
+
+.adv .adv-con{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	line-height: 40px;
+	text-align: right;
+	/* border: 1px solid red; */
+	color: #A8A8AA;
+	font-size: 12px;
+}
+
+.wheel{
+	width:100%;
+	height: 540px;
+	background: #CC3341;
+	position: relative; 
+}
+
+.wheel .nav{
+	width: 100%;
+	height:44px ;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.wheel .con1 {
+	width:1000px;
+	height:44px;
+	line-height: 44px;
+	text-align: justify; 
+	margin: 0 auto;
+}
+
+.wheel .con1:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 0;
+}
+
+.wheel .con1 a{
+	display: inline-block;
+}
+
+.wheel .nav .con2{
+	display: none;
+}
+
+/* 放置轮播图 */
+
+.wheel .wheel-img {
+	display: block;
+	width:100%;
+	height: 540px;
+	background-image: url('../img/iphone7_large.png'); 
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 0px;
+	right:0px;
+	background-position: center 180px;
+}
+
+/* 放置文字 */
+.wheel .word{
+	width: 100%;
+	height: 220px;
+	line-height:10px;
+	text-align: center; 
+}
+
+.wheel .word .te{
+	width:55px;
+	height: 25px;
+	border: 1px solid #fff;
+	border-radius: 4px; 
+	font-size: 12px;
+	line-height: 25px;
+	text-align: center;
+	margin: 40px auto;
+}
+.wheel .word a{
+	display: block; 
+}
+
+.wheel .word a h1{
+	font-size:30px;
+}
+.wheel .word a h2{
+	font-size:26px;
+	padding-top: 30px;
+}
+
+/* 箭头 */
+.wheel .left{
+	width: 230px;
+	height: 540px;
+	/* background: pink; */
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.wheel .left .son{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background:rgba(180, 180, 180, 0.25);
+	/* position: absolute; */
+	top: 0;
+	bottom: 0;
+	margin: 270px auto;
+	display: none;
+	line-height: 64px;
+	color: #862F37;
+	font-size: 36px;
+	text-align: center;
+}
+
+.wheel .right{
+	width: 230px;
+	height: 540px;
+	/* background: pink; */
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #862F37;
+	font-size: 36px;
+}
+
+.wheel .right .son{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background:rgba(180, 180, 180, 0.25);
+	/* position: absolute; */
+	top: 0;
+	bottom: 0;
+	margin: 270px auto;
+	display: none;
+	line-height: 64px;
+	text-align: center;
+}
+
+.wheel .btn:hover .son{
+	display: block;
+	color: #6C1C21;
+	opacity: 1;
+}
+
+/* 轮播小点 */
+.wheel .lunbo{
+	width:210px;
+	height: 20px;
+	margin: auto 0;
+	position: absolute;
+	list-style: none;
+	bottom: 5px;
+	left: 550px;
+}
+
+.wheel .lunbo .li1{
+	width:50px;
+	height:2px ;
+	background: #808080;
+	float: left;
+	margin-right: 5px; 
+}
+.wheel .lunbo .li2{
+	width:50px;
+	height:2px ;
+	float: left;
+	margin-right: 5px; 
+	background: #6F76DB;
+}
+
+/* 四张图片 */
+
+.box1{
+	width:100%;
+	height: 200px;
+	display: block; 
+}
+
+.box1 .box-son{
+	width: 100%;
+	height: 200px;
+}
+
+.box1 .box-son li{
+	width: 25%;
+	height: 200px;
+	float: left;
+	border: 1px solid #fff;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	box-sizing: border-box;
+}
+.box1 .box-son li:nth-child(1){
+	background: url('../img/a_large.jpg') no-repeat;
+	background-size:cover;
+	border-left: 0;
+	background-position: center center;
+}
+
+.box1 .box-son li:nth-child(2){
+	background: url('../img/i_large.jpg') no-repeat;
+	background-size:cover;
+	border-left: 0;
+	background-position: center center;
+}
+
+.box1 .box-son li:nth-child(3){
+	background: url('../img/s_large.jpg') no-repeat;
+	background-size:cover;
+	border-left: 0;
+	background-position: center center;
+}
+
+.box1 .box-son li:nth-child(4){
+	background: url('../img/w_large.jpg') no-repeat;
+	background-size:cover;
+	border-left: 0;
+	background-position: center center;
+}
+
+/* 底部开始 */
+
+footer{
+	width: 100%;
+	height: 421px;
+	background: #F2F2F2;
+	position: absolute;
+	top: 780px;
+    font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+section{
+	width: 980px;
+	height: 50px;
+	margin: 0 auto;
+	border-bottom: 1px solid #D6D6D6;
+}
+footer .footertips{
+	width: 980px;
+	height: 21px;
+	color:#888888;
+	margin-top: 15px;
+	font-size: 11px;
+	letter-spacing: .005em;
+}
+footer .mainfooter{
+	width: 1000px;
+	height: 245px;
+	padding: 20px 10px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	margin:0 auto;
+}
+footer .mainfooter div{
+	width: 20%;
+	height: auto;
+	float: left;
+
+}
+
+footer .mainfooter a{
+	display: block;
+	font-size: 11px;
+	margin-bottom: 5px;
+	color:#68818F;
+	width: auto;
+	height: 15px;
+	box-sizing: border-box;
+}
+footer .mainfooter p{
+	font-size: 14px;
+	color: #333;
+	margin-bottom: 5px;
+}
+footer .mainfooter a:hover{
+	color: #333;
+	text-decoration: underline;
+}
+footer .mainfooter .minfo3 .jyyy1{
+	margin-bottom: 20px;
+}
+footer .mainfooter .minfo4 .yun{
+	margin-bottom: 20px;
+}
+footer .navfooter{
+	width: 100%;
+	height: 489px;
+	padding: 20px 20px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	display: none;
+}
+footer .navfooter p{
+	font-size: 14px;
+	color: #333;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #D6D6D6;
+	cursor: pointer;
+}
+footer .navfooter a{
+	display: block;
+	color: #AA6886;
+	width: 100%;
+	height: 38px;
+	padding: 10px 0;
+	border-bottom: 1px solid #D6D6D6;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+footer .navfooter span{
+	display: block;
+	margin-right: 20px;
+	color: #333;
+	float: right;
+	transition: all 0.1s ease;
+}
+footer .navfooter a:hover{
+	color: #333;
+}
+footer .navfooter span:hover{
+	transform: rotateZ(45deg) scale(2, 2);
+	transform-origin: center;
+}
+footer .bottom{
+	width: 980px;
+	height: 109px;
+	margin: 0 auto;
+	font-size: 9px;
+}
+footer .bottom p{
+	width: 100%;
+	height: 38px;
+	padding-top: 7px;
+	padding-bottom: 6px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #D6D6D6;
+
+	letter-spacing: 0.005em;
+}
+footer .bottom p .sq{
+	color: #0070C9;
+}
+footer .bottom p .sq:hover{
+	text-decoration: underline;
+}
+footer .bottom .copy a{
+	color: #68818F;
+}
+footer .bottom .copy{
+	clear: both;
+	color: #68818F;
+}
+footer .bottom span{
+	display: block;
+	margin-right: 30px;
+	margin-top: 3px;
+	font-size: 11px;
+	color: #68818F;
+	float: left;
+}
+footer .bottom .notice a{
+	display: block;
+	width: auto;
+	height: 21px;
+	padding-right: 12px;
+	border-right: 1px solid #D6D6D6;
+	margin-right: 10px;
+	float: left;
+	font-size: 11px;
+	color: #68818f;
+	margin-top: 3px;
+}
+footer .bottom .notice .sitemap{
+	margin-right: 0;
+	padding-right: 0;
+}
+footer .bottom .notice a:hover{
+	text-decoration: underline;
+	color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+/* 底部结束 */
+
+
+
+
+
+
+
+/* 中频 */
+@media screen and (max-width: 1000px){
+
+	.wheel .nav .con1{
+		width: 100%;	
+	}
+	.wheel{
+	width:100%;
+	height:500px;
+	background: #CC3341;
+	position: relative; 
+	}
+	.wheel .wheel-img {
+	display: block;
+	width:100%;
+	height: 500px;
+	background-image: url('../img/iphone7_medium.png'); 
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 0px;
+	right:0px;
+	background-position: center 180px;
+	}
+	.wheel .lunbo{
+	width:210px;
+	height: 20px;
+	margin: auto 0;
+	position: absolute;
+	list-style: none;
+	bottom: 5px;
+	left: 330px;
+	}
+	.wheel .left{
+	width: 230px;
+	height: 500px;
+	/* background: pink; */
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+	.wheel .right{
+	width: 230px;
+	height: 500px;
+	/* background: pink; */
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #862F37;
+	font-size: 36px;
+	}
+	/* 图片 */
+	.box1 .box-son li{
+	width:50%;
+	height: 200px;
+	float: left;
+	border: 1px solid #fff;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	box-sizing: border-box;
+	}
+	.box1 .box-son li:nth-child(1){
+	background: url('../img/a_medium.jpg') no-repeat;
+	background-size:cover;
+	border-left: 0;
+	background-position: center center;
+	}
+
+	.box1 .box-son li:nth-child(2){
+		background: url('../img/i_medium.jpg') no-repeat;
+		background-size:cover;
+		border-left: 0;
+		background-position: center center;
+	}
+
+	.box1 .box-son li:nth-child(3){
+		background: url('../img/s_medium.jpg') no-repeat;
+		background-size:cover;
+		border-left: 0;
+		background-position: center center;
+	}
+
+	.box1 .box-son li:nth-child(4){
+		background: url('../img/w_medium.jpg') no-repeat;
+		background-size:cover;
+		border-left: 0;
+		background-position: center center;
+	}
+	footer{
+		width: 100%;
+		height: 421px;
+		background: #F2F2F2;
+		position: absolute;
+		top: 940px;
+		font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
+	footer .footertips{
+		width: 980px;
+		height: 21px;
+		color:#888888;
+		margin-top: 15px;
+		font-size: 11px;
+		letter-spacing: .005em;
+	}
+	section{
+		width: 100%;
+		height: 50px;
+		padding: 0 20px;
+		margin: 0 auto;
+		border-bottom: 1px solid #D6D6D6;
+		box-sizing: border-box;
+	}
+	footer .mainfooter{
+		width: 100%;
+		height: 245px;
+		padding: 20px 10px;
+		box-sizing: border-box;
+		margin:0 auto;
+	}
+	footer .bottom{
+		width: 100%;
+		height: 109px;
+		margin: 0 auto;
+	}
+
+}
+
+
+/* 小频 */
+@media screen and (max-width: 770px){
+	.adv{
+	width: auto;
+	height:40px;
+	background: #444;
+}
+	.wheel{
+	width:100%;
+	height:460px;
+	background: #CC3341;
+	position: relative; 
+}
+	.wheel .nav .con2 {
+	display: block;
+	width: auto;	
+	height:44px;
+	line-height: 44px;
+	text-align: justify; 
+	margin: 0 auto;
+	}
+
+	.wheel .con2:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 0;
+	}
+
+	.wheel .con2 a{
+	display: inline-block;
+	}
+	.wheel .nav .con1{
+		display: none;
+	}
+	.wheel .wheel-img {
+	display: block;
+	width:100%;
+	height:460px;
+	background-image: url('../img/iphone7_small.png'); 
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 0px;
+	right:0px;
+	background-position: center 180px;
+	}
+	.wheel .lunbo{
+	width:210px;
+	height: 20px;
+	margin: auto 0;
+	position: absolute;
+	list-style: none;
+	bottom: 5px;
+	left: 250px;
+	}
+	.wheel .left{
+	width: 230px;
+	height:460px;
+	/* background: pink; */
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+	.wheel .right{
+	width: 230px;
+	height: 460px;
+	/* background: pink; */
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #862F37;
+	font-size: 36px;
+	}
+	/* 图片 */
+	.box1 .box-son li{
+	width:100%;
+	height: 200px;
+	float: left;
+	border: 1px solid #fff;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	box-sizing: border-box;
+	}
+	.box1 .box-son li:nth-child(1){
+	background: url('../img/a_small.jpg') no-repeat;
+	background-size:cover;
+	border-left: 0;
+	background-position: center center;
+}
+
+	.box1 .box-son li:nth-child(2){
+		background: url('../img/i_small.jpg') no-repeat;
+		background-size:cover;
+		border-left: 0;
+		background-position: center center;
+	}
+
+	.box1 .box-son li:nth-child(3){
+		background: url('../img/s_small.jpg') no-repeat;
+		background-size:cover;
+		border-left: 0;
+		background-position: center center;
+	}
+
+	.box1 .box-son li:nth-child(4){
+		background: url('../img/w_small.jpg') no-repeat;
+		background-size:cover;
+		border-left: 0;
+		background-position: center center;
+	}
+
+
+	/* 底部 */
+	footer{
+		width: 100%;
+		height: 421px;
+		background: #F2F2F2;
+		position: absolute;
+		top: 1300px;
+	    font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	}
+	section{
+		width: 100%;
+		height: 50px;
+		margin: 0 auto;
+		padding: 0 20px;
+		border-bottom: 1px solid #D6D6D6;
+		box-sizing: border-box;
+	}
+	footer .footertips{
+		width: 100%;
+		height: 21px;
+		color:#888888;
+		margin-top: 15px;
+		font-size: 11px;
+		letter-spacing: .005em;
+	}
+	footer .mainfooter{
+		display: none;
+	}
+	footer .navfooter{
+		display: block;
+	}
+	footer .bottom{
+		width: 100%;
+		height: 109px;
+		margin: 0 auto;
+	}
+}
